@@ -1,0 +1,75 @@
+.wrap {
+  @include outer-container;
+  padding-left: flex-gutter(4);
+  padding-right: flex-gutter(4);
+
+  @include media($medium-screen-up) {
+    padding-left: flex-gutter(8);
+    padding-right: flex-gutter(8);
+  }
+
+  @include media($large-screen-up) {
+    padding-left: flex-gutter(12);
+    padding-right: flex-gutter(12);
+  }
+}
+
+.main-header {
+  padding-bottom: 3.125em;
+  padding-top: 3.125em;
+
+  @include media($medium-screen-up) {
+    padding-bottom: 6.25em;
+    padding-top: 6.25em;
+  }
+}
+
+.logo {
+  @include fill-parent;
+  color: $blue;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include media($medium-screen-up) {
+    @include span-columns(6);
+    font-size: 2.25em;
+    text-align: left;
+  }
+}
+
+.lambda {
+  @include size(42px 44px);
+  background: url('../images/lambda.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: -10px;
+}
+
+.main-nav {
+  @include fill-parent;
+  font-family: $heading-font-family;
+  font-size: 0.875em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include media($medium-screen-up) {
+    @include span-columns(2);
+    text-align: right;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 1.25em;
+  }
+
+  a {
+    color: $transparent-black;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}

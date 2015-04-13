@@ -1,4 +1,8 @@
-$base-font-family: "Arial";
-h1 {
-  font: 1.5em $base-font-family;
-}
+@import "normalize";
+@import "bourbon/bourbon";
+@import "bitters/base";
+@import "neat/neat";
+
+@import "scaffolding/index";
+@import "homepage/index";
+@import "blog/index";

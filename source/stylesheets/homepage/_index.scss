@@ -1,0 +1,131 @@
+.about {
+  padding-bottom: 3.125em;
+  padding-top: 3.125em;
+
+  @include media($medium-screen-up) {
+    padding-bottom: 6.25em;
+    padding-top: 6.25em;
+  }
+}
+
+.content-aside {
+  @include fill-parent;
+  margin-bottom: $base-spacing;
+  text-align: center;
+
+  @include media($medium-screen-up) {
+    @include span-columns(2 of 8);
+    margin-bottom: 0;
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(3 of 12);
+    @include shift(1);
+  }
+
+  h2 {
+    color: $transparent-black;
+    font-size: 0.875em;
+    text-transform: uppercase;
+  }
+}
+
+.about-content {
+  @include fill-parent;
+
+  @include media($medium-screen-up) {
+    @include span-columns(6 of 8);
+    @include omega;
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(8 of 12);
+  }
+
+  h3 {
+    color: $blue;
+    font-family: $base-font-family;
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1.5em;
+  }
+}
+
+.about-content-columns {
+  @include media($large-screen-up) {
+    @include columns(2 1.5em);
+  }
+
+  p {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
+.the-goods,
+.communication,
+.communication-gray {
+  padding-bottom: 3.125em;
+  padding-top: 3.125em;
+
+  @include media($medium-screen-up) {
+    padding-bottom: 6.25em;
+    padding-top: 6.25em;
+  }
+
+  .content-aside {
+    display: none;
+
+    @include media($medium-screen-up) {
+      display: inline-block;
+    }
+  }
+}
+
+.the-goods {
+  background-color: $green;
+}
+
+.communication-gray {
+  background-color: $transparent-black;
+
+  a {
+    color: white;
+
+    &:hover {
+      color: darken(white, 15);
+    }
+  }
+}
+
+.proficiencies,
+.open-source,
+.email,
+.elsewhere {
+  text-align: center;
+
+  @include media($medium-screen-up) {
+    @include span-columns(3 of 8);
+    text-align: left;
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(4 of 12);
+  }
+
+  h3 {
+    color: $transparent-black;
+    font-size: 0.875em;
+    text-transform: uppercase;
+  }
+}
+
+.proficiencies,
+.email {
+  margin-bottom: $base-spacing;
+
+  @include media($medium-screen-up) {
+    margin-bottom: 0;
+  }
+}
