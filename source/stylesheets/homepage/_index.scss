@@ -1,3 +1,11 @@
+.banner {
+  img {
+    display: inline-block;
+    float: left;
+    max-width: 100%;
+  }
+}
+
 .about {
   padding-bottom: 3.125em;
   padding-top: 3.125em;
@@ -36,7 +44,6 @@
 
   @include media($medium-screen-up) {
     @include span-columns(6 of 8);
-    @include omega;
   }
 
   @include media($large-screen-up) {
@@ -128,5 +135,12 @@
 
   @include media($medium-screen-up) {
     margin-bottom: 0;
+  }
+}
+
+.open-source,
+.elsewhere {
+  @include media($medium-screen-up) {
+    @include omega;
   }
 }

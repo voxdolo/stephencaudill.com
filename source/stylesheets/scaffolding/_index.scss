@@ -12,6 +12,11 @@
     padding-left: flex-gutter(12);
     padding-right: flex-gutter(12);
   }
+
+  @include media($very-large-screen-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .main-header {
@@ -67,6 +72,7 @@
 
   a {
     color: $transparent-black;
+    font-weight: bold;
 
     &:hover {
       color: $black;
