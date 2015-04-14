@@ -52,6 +52,8 @@
     @include span-columns(8 of 12);
   }
 
+  max-width: 42em;
+
   h3 {
     color: $blue;
     font-family: $base-font-family;
@@ -132,7 +134,7 @@
 }
 
 .open-source a {
-  color: #035d8e;
+  color: #cafff0;
   &:hover {
     color: #fefefe;
   }
