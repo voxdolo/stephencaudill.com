@@ -63,7 +63,7 @@
 
 .about-content-columns {
   @include media($large-screen-up) {
-    @include columns(2 1.5em);
+    @include columns(1 1.5em);
   }
 
   p {
@@ -128,6 +128,13 @@
     color: $transparent-black;
     font-size: 0.875em;
     text-transform: uppercase;
+  }
+}
+
+.open-source a {
+  color: #035d8e;
+  &:hover {
+    color: #fefefe;
   }
 }
 
