@@ -6,6 +6,9 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 activate :livereload
+activate :blog do |blog|
+
+end
 
 # Build-specific configuration
 configure :build do
