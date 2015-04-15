@@ -7,6 +7,7 @@
     %title= page_title(current_page.data.title)
     %meta{name: 'description', content: 'Personal website of Stephen Caudill, software developer extraodinaire.'}
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}
+    %link{rel: 'alternate', type: 'application/atom+xml', title: 'Atom 1.0', href: 'http://stephencaudill.com/blog/feed.xml'}
     %link{href: 'http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic,700,400|Open+Sans:700', rel: 'stylesheet', type: 'text/css'}
     = stylesheet_link_tag "main"
   
@@ -26,7 +27,6 @@
               %a{href: "mailto:hello@stephencaudill.com"} Email
 
     = yield
-
 
 %section{class: page_classes.include?('blog') ? 'communication-gray' : 'communication'}
   %div.wrap
