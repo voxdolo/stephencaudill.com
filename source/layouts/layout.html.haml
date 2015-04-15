@@ -10,5 +10,43 @@
     %link{href: 'http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic,700,400|Open+Sans:700', rel: 'stylesheet', type: 'text/css'}
     = stylesheet_link_tag "main"
   
-  %body.page_classes
+  %body{class: page_classes}
+    %header.main-header
+      %div.wrap
+        %h1.logo
+          %a{href: "/"}
+            %span.lambda
+            Stephen Caudill
+
+        %nav.main-nav
+          %ul
+            %li
+              %a{href: "/blog"} Blog
+            %li
+              %a{href: "mailto:hello@stephencaudill.com"} Email
+
     = yield
+
+
+%section{class: page_classes.include?('blog') ? 'communication-gray' : 'communication'}
+  %div.wrap
+    %aside.content-aside
+      %h2 Communication
+
+    %section.email
+      %h3 Email
+      %a{href: "mailto:hello@stephencaudill.com"}hello@stephencaudill.com
+
+    %section.elsewhere
+      %h3 Elsewhere
+      %ul
+        %li
+          %a{href: "https://www.github.com/voxdolo"}Github
+        %li
+          %a{href: "https://www.linkedin.com/in/voxdolo"}Linkedin
+        %li
+          %a{href: "https://coderwall.com/voxdolo"}Coderwall
+        %li
+          %a{href: "https://twitter.com/voxdolo"}Twitter
+        %li
+          %a{href: "https://keybase.io/voxdolo"}Keybase
