@@ -29,3 +29,9 @@ activate :blog do |blog|
   blog.page_link = "page/{num}"
 end
 page "/blog/feed.xml", layout: false
+
+helpers do
+  def page_title(title)
+    ["Stephen Caudill", title].compact.join(" &lambda; ")
+  end
+end

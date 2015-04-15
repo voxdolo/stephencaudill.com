@@ -4,7 +4,7 @@
     %meta{charset: 'utf-8'}
     / Always force latest IE rendering engine or request Chrome Frame
     %meta{content: 'ie=edge,chrome=1', 'http-equiv': 'x-ua-compatible'}
-    %title= current_page.data.title || 'Stephen Caudill'
+    %title= page_title(current_page.data.title)
     %meta{name: 'description', content: 'Personal website of Stephen Caudill, software developer extraodinaire.'}
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}
     %link{href: 'http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic,700,400|Open+Sans:700', rel: 'stylesheet', type: 'text/css'}
