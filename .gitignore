@@ -4,3 +4,4 @@
 # Ignore cache
 /.sass-cache
 /.cache
+/.s3_sync

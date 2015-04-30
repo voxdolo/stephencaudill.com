@@ -30,6 +30,10 @@ activate :blog do |blog|
 end
 page "/blog/feed.xml", layout: false
 
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket = 'stephencaudill.com'
+end
+
 helpers do
   def page_title(title)
     ["Stephen Caudill", title].compact.join(" &lambda; ")
