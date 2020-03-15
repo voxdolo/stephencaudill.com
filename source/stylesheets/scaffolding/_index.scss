@@ -20,12 +20,11 @@
 }
 
 .main-header {
-  padding-bottom: 3.125em;
-  padding-top: 3.125em;
+  padding: 0.75em 0.5em;
 
   @include media($medium-screen-up) {
-    padding-bottom: 6.25em;
-    padding-top: 6.25em;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
   }
 }
 
